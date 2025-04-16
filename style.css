@@ -116,7 +116,7 @@
     top: 30px;
     right: 30px;
     padding: 12px 20px;
-    background-color: #ff4081;
+    background-color: #4d40ff;
     color: #fff;
     font-size: 1em;
     border: none;
@@ -127,7 +127,7 @@
   }
   
   #accessibilityBtn:hover {
-    background-color: #e91e63;
+    background-color: #4d40ff);
   }
   
   .accessibility-options {
