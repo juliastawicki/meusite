@@ -135,9 +135,9 @@
     position: absolute;
     top: 70px;
     right: 30px;
-    flex-direction: row; /* Alinha os botões lado a lado */
-    gap: 10px; /* Espaçamento entre os botões */
     z-index: 9;
+    display: flex; /* Faz os botões ficarem lado a lado */
+    gap: 10px; /* Adiciona um pequeno espaçamento entre os botões */
   }
   
   .accessibility-options button {
