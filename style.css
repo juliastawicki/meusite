@@ -116,7 +116,7 @@
     top: 30px;
     right: 30px;
     padding: 12px 20px;
-    background-color: #4d40ff;
+    background-color: #3308f3;
     color: #fff;
     font-size: 1em;
     border: none;
@@ -127,7 +127,7 @@
   }
   
   #accessibilityBtn:hover {
-    background-color: #4d40ff);
+    background-color: #3308f3;
   }
   
   .accessibility-options {
@@ -135,8 +135,8 @@
     position: absolute;
     top: 70px;
     right: 30px;
-    flex-direction: column;
-    gap: 5px;
+    flex-direction: row; /* Alinha os botões lado a lado */
+    gap: 10px; /* Espaçamento entre os botões */
     z-index: 9;
   }
   
@@ -154,4 +154,6 @@
   .accessibility-options button:hover {
     background-color: #444;
   }
-   
+  
+    
+  
