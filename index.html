@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Olivia Rodrigo</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class=" p-5">
+
+        <nav class="container d-flex justify-content-between align-items-center">
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+
+            <div id="acessibilidade" class="menu-acessibilidade"> 
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                        <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+                        <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="diminuir o tamanho da fonte">A-</button>
+                        <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores">
+                            <i class="bi bi-shadows"></i>
+                        </button>
+                </div>
+        </div>
+        
+        </nav>
+
+    </header>
+
+
+    <main class="container my-5">
+
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 text-white fst-italic fw-bold">Conheça sobre:</h1>
+                    <img src="img/80314449b7f871c1ba8ee7d8464551f3-removebg-preview.png" class="mb-3" width="510" height="278" loading="lazy">
+                    <a href="#Olivia-Rodrigo" class="btn btn-lg botao-inicio fw-semibold" style="background-color: #7f43ce; color: #ffffff;">Quero conhecer!</a>
+        </section>
+
+        <section id="Olivia-Rodrigo" class="my-5 pt-6 secao-tropicalia">
+            <div class="container d-flex align-items-center ">
+                <div class="col-4 d-flex justify-content-center">
+                    <img src="img/d82deea1f8f0181f025ecef5463c1679-removebg-preview.png" class="rounded-pill" alt="" width="275" height="331" loading="lazy">
+                </div>
+
+                <div 
+                lass="col-5">
+                    <h2>Quem é Olivia Rodrigo?</h2>
+                    <p class="p-2">Olivia Rodrigo é uma cantora, compositora e atriz americana, nascida em 20 de fevereiro de 2003, na Califórnia. Ela ficou conhecida inicialmente por atuar em séries da Disney, como High School Musical: The Musical: The Series, mas foi na música que alcançou fama mundial.
+
+                        Em 2021, lançou seu primeiro single, "Drivers License", que se tornou um fenômeno global. Logo depois, veio seu álbum de estreia, "SOUR", seguido pelo segundo, "GUTS", em 2023 — ambos aclamados pela crítica e recheados de sucessos como "Good 4 U" e "Vampire".
+                        
+                        Ela já ganhou vários prêmios importantes, incluindo Grammys, e é considerada uma das artistas mais influentes da nova geração do pop. Olivia também é conhecida por seu estilo emocional e autêntico de compor, além de seu engajamento em causas sociais.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <section id="galeria">
+                <h2 class="text-center pt-5">Galeria</h2>
+                <div class="container p-3 mt-3 fundo-galeria ">
+    
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/Olivia_Rodrigo_@_Theatre_at_Ace_Hotel_10_09_2023_(53423574558).jpg"
+                            class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/Olivia_Rodrigo_@_Theatre_at_Ace_Hotel_10_09_2023_(53423574498).jpg" class="img-fluid rounded-5"
+                            loading="lazy">
+                    </div>
+                </div>
+                <div class="row mt-4  justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/Olivia_Rodrigo_@_Theatre_at_Ace_Hotel_10_09_2023_(53423418101).jpg" class="img-fluid rounded-5"
+                            loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/Olivia_Rodrigo_@_Theatre_at_Ace_Hotel_10_09_2023_(53423846815).jpg"
+                            class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario"> <!-- Caixa do formulário com 60% de largura -->
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
+                                placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar
+                                mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center p-3 fst-italic">
+        <p>Acesse nossas redes:</p>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-tiktok"></i>
+        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
