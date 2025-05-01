@@ -1,24 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
-/* Cor do contraste */
 :root {
-    --roxo-claro: #7f43ce;
+    --laranja-claro:#4180ab;
     --alto-contraste-fundo: #000000;
     --alto-contraste-texto: #ffffff;
-    --alto-contraste-link: #471754;
+    --alto-contraste-link: #00e1ff;
 }
 
 body {
     font-size: 1rem;
     font-family: 'Montserrat';
-    margin: 0;
-    padding: 0;
 }
 
 header {
     background-color: #ffffff;
 }
+
 
 section {
     padding-bottom: 5rem;
@@ -26,17 +24,17 @@ section {
 
 
 .nav-link {
-    color: #7f43ce;
+    color:#4180ab;
     font-weight: 600;
 }
-  
+
 .inicio-fundo {
     /* aula 3 */
-    background-image: url('img/OlivaRO2150524_(63)_(53727618945).jpg');
+    background-image: url('img/stadium.jpg');
     /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: right;
-    border-radius: 90px;
+    border-radius: 80px;
     width: 100%;
     height: 606px;
     padding: 40px;
@@ -62,15 +60,14 @@ section {
 
 
 .botao-inicio {
-    background-color: #7f43ce; /* Altere a cor de fundo para o que desejar (exemplo: tom de vermelho) */
-    color: #ffffff; /* Altere a cor do texto para branco (ou qualquer cor que preferir) */
+    background-color: var(--laranja-claro);
     border-radius: 30px;
     border: none;
     width: 14em;
     height: 3em;
     align-content: center;
-}
 
+}
 
 .display-4 {
     text-shadow: -5px 5px var(--laranja-claro);
@@ -78,8 +75,14 @@ section {
 
 
 #tropicalia {
-    background: url('img/c795e3c176d6fe6245676a6746e45e1a-removebg-preview.png') top right no-repeat;
-    background-size: 110px 110px;
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: url('img/logo15.png') top right no-repeat,
+        url('img/logo15.png') bottom left no-repeat;
+    background-size: 180px 180px;
+    /* Ajuste o tamanho conforme necessário */
 }
 
 #tropicalia .container {
@@ -100,23 +103,22 @@ h2 {
 }
 
 #galeria {
-    background-color: #ffffff;
+    background-color: #FAF4F4;
 
 }
 
 .fundo-galeria {
-    background: url('img/0608ed68c3fe44d8ead906a0d4c49741-removebg-preview.png') bottom right no-repeat;
+    background: url('img/logo15.png') bottom right no-repeat;
     background-size: 180px 180px;
 }
 
 #contato {
-    background-image: url('img/4965007.jpg');
+    background-image: url('img/stadium.jpg');
     background-size: cover;
-    padding: 6rem 1;
+    padding: 4rem 0;
     /* Espaçamento interno para a seção de contato */
 
 }
-
 
 .formulario {
     background-color: #ffffff;
@@ -130,7 +132,7 @@ h2 {
 }
 
 .formulario button {
-    background-color: #7f43ce;
+    background-color: #4180ab;
     border: none;
     font-weight: bold;
 }
@@ -144,6 +146,7 @@ h2 {
     right:20px;
     z-index: 1000;
 }
+
 .rotacao-botao{
     transform: rotate(-90deg);
     transform-origin: right center;
@@ -162,94 +165,36 @@ h2 {
     display: none;
 }
 
-/* Estilos para o alto contraste */
-.alto-contraste header,
-.alto-contraste footer,
-.alto-contraste .formulario {
+.alto-contraste{
     background-color: var(--alto-contraste-fundo);
     color: var(--alto-contraste-texto);
 }
 
-.alto-contraste .nav-link {
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link{
     color: var(--alto-contraste-link);
 }
 
 .alto-contraste .botao-inicio,
 .alto-contraste .formulario button,
-.alto-contraste .btn-primary {
+.alto-contraste .btn-primary{
     background-color: var(--alto-contraste-link);
-    color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-fundo)
 }
 
-.alto-contraste #tropicalia,
-.alto-contraste .fundo-galeria {
+.alto-contraste #tropicalia {
     background: none;
 }
 
 .alto-contraste #galeria {
     background-color: var(--alto-contraste-fundo);
 }
-
-/* Modo Alto Contraste - aplica preto e branco em tudo */
-.alto-contraste,
-.alto-contraste body,
-.alto-contraste main,
-.alto-contraste section,
-.alto-contraste header,
-.alto-contraste footer,
-.alto-contraste nav,
-.alto-contraste .formulario,
-.alto-contraste .fundo-galeria,
-.alto-contraste .inicio-fundo {
-    background-color: var(--alto-contraste-fundo) !important;
-    color: var(--alto-contraste-texto) !important;
-}
-
-.alto-contraste h1,
-.alto-contraste h2,
-.alto-contraste h3,
-.alto-contraste p,
-.alto-contraste a,
-.alto-contraste span,
-.alto-contraste li,
-.alto-contraste label,
-.alto-contraste input,
-.alto-contraste textarea {
-    color: var(--alto-contraste-texto) !important;
-}
-
-.alto-contraste .btn,
-.alto-contraste .botao-inicio,
-.alto-contraste .formulario button {
-    background-color: var(--alto-contraste-link) !important;
-    color: var(--alto-contraste-fundo) !important;
-    border: none;
-}
-
-/* Remove fundos de imagens decorativas */
-.alto-contraste #tropicalia,
-.alto-contraste .fundo-galeria,
-.alto-contraste #contato {
-    background: none !important;
-}
-
-/* Imagens de fundo e conteúdo */
-.alto-contraste .form-control {
-    background-color: var(--alto-contraste-fundo) !important;
-    color: var(--alto-contraste-texto) !important;
-    border: 1px solid var(--alto-contraste-texto);
-}
-
-/* Fontes e Títulos */
-.alto-contraste h1,
-.alto-contraste h2,
-.alto-contraste h3,
-.alto-contraste p,
-.alto-contraste a,
-.alto-contraste span,
-.alto-contraste li,
-.alto-contraste label,
-.alto-contraste input,
-.alto-contraste textarea {
-    color: var(--alto-contraste-texto) !important;
+.alto-contraste .fundo-galeria {
+    background: none;
 }
